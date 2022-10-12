@@ -100,7 +100,8 @@ alter sequence TraineeID restart with 1000 increment by 1
 drop sequence TraineeID
 
 create clustered index ind_TID on demo(TID)
-
+DROP INDEX ind_TID ON demo
+DROP INDEX ind_TName ON demo
 create index ind_TName on demo(TName)
 
 select * from demo
